@@ -22,7 +22,9 @@ class Intro extends React.Component {
                     strings={[
                       "Full Stack MERN Developer",
                       "AWS Certified Trainer",
+                      "Working @ Cisco Systems Inc.",
                       "Software Developer",
+                      "Working at Cisco Systems",
                       "ICSI | CNSS Certified Network Security Sepecialist",
                       "Certified File Transfer Professional",
                       "Intern at J.P.Morgan",
