@@ -21,14 +21,14 @@ class Intro extends React.Component {
                   <Typed
                     strings={[
                       "Full Stack MERN Developer",
-                      "AWS Certified Trainer",
                       "Working @ Cisco Systems Inc.",
                       "Software Developer",
-                      "Working at Cisco Systems",
+                      "Network Engineer",
                       "ICSI | CNSS Certified Network Security Sepecialist",
                       "Certified File Transfer Professional",
-                      "Intern at J.P.Morgan",
-                      "Virtual Intern at Microsoft",
+                      "Cisco Certified Network Associate",
+                      "Cisco Certified Network Professional",
+
                     ]}
                     typeSpeed={80}
                     backDelay={1100}
