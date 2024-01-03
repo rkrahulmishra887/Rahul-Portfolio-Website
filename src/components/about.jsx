@@ -79,7 +79,7 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-            "With the zeal to reach the acme of success, I want to hold the hands that could beneﬁt the country that reared me up. Accomplished Software Developer specialized in object-oriented approach to Network and platform development.",
+            "With the zeal to reach the acme of success, I want to hold the hands that could beneﬁt the country that raised me up. Accomplished Software Developer specialized in object-oriented approach to Network and platform development.",
         },
         {
           id: "first-p-about",
@@ -94,7 +94,7 @@ class About extends React.Component {
         {
           id: "second-p-about",
           content:
-            "With less than 1 years of experience developing web applications using the latest front-end and back-end technologies.",
+            "With more than 3 years of experience developing web applications using the latest front-end and back-end technologies.",
         },
         {
           id: "third-p-about",
