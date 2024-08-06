@@ -20,10 +20,9 @@ class Intro extends React.Component {
                 <strong className="text-slider">
                   <Typed
                     strings={[
-                      "Full Stack MERN Developer",
                       "Working @ Cisco Systems Inc.",
                       "Software Developer",
-                      "Network Engineer",
+                      "Network Security Engineer",
                       "ICSI | CNSS Certified Network Security Sepecialist",
                       "Certified File Transfer Professional",
                       "Cisco Certified Network Associate",

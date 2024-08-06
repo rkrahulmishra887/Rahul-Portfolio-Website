@@ -7,36 +7,34 @@ class About extends React.Component {
     this.state = {
       skills: [
         {
+          id: "K8S",
+          content: "K8S",
+          porcentage: "60%",
+          value: "60",
+        },
+        {
+          id: "Docker",
+          content: "Docker",
+          porcentage: "80%",
+          value: "80",
+        },
+        {
+          id: "CI/CD",
+          content: "CI/CD",
+          porcentage: "90%",
+          value: "90",
+        },
+        {
           id: "NodeJS_skill",
           content: "NodeJS",
           porcentage: "80%",
           value: "80",
         },
-        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
         {
           id: "JavaScript_skill",
           content: "JavaScript",
           porcentage: "90%",
           value: "90",
-        },
-        {
-          id: "AngularJS_skill",
-          content: "AngularJS",
-          porcentage: "75%",
-          value: "75",
-        },
-        {
-          id: "ExpressJS_skill",
-          content: "ExpressJS",
-          porcentage: "70%",
-          value: "70",
-        },
-        {
-          id: "ReactJS_skill",
-          content: "ReactJS",
-          porcentage: "80%",
-          value: "80",
         },
         {
           id: "Python_skill",
