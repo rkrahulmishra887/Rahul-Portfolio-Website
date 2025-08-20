@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 //import css in order
 import 'normalize.css';
 import './animate.css';
@@ -27,20 +29,46 @@ import Portfolio from './components/portfolio.jsx';
 import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
 import Preloader from './components/preloader';
+import Testimonials from './components/testimonial.jsx';
 
 
+// ReactDOM.render(
+//     <React.Fragment>
+//         <Navbar />
+//         <Intro />
+//         <About />
+//         <Portfolio />
+//         <Contact />
+//         <BackToTop />
+//         <Preloader />
+//         <Testimonials />
+//     </React.Fragment>,
+// document.getElementById('root'));
 
-ReactDOM.render(
-    <React.Fragment>
+const App = () => {
+    return (
+      <Router>
         <Navbar />
-        <Intro />
-        <About />
-        <Portfolio />
-        <Contact />
         <BackToTop />
         <Preloader />
-    </React.Fragment>,
-document.getElementById('root'));
+  
+        {/* Define your routes here */}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Intro />
+              <About />
+              <Portfolio />
+              <Contact />
+            </>
+          } />
+          <Route path="/testimonials" element={<Testimonials />} />
+        </Routes>
+      </Router>
+    );
+  };
+  
+  ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

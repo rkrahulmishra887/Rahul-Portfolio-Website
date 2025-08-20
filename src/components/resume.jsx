@@ -22,9 +22,8 @@ class Resume extends Component {
             <h4 style={{ color: "grey" }}>Software Developer</h4>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <p>
-              AWS Certified Trainer, MERN Full Stack Developer, ICSI | CNSS
-              Certified Network Security Specialist, Intern at J.P.Moragan ,
-              Virtual Intern at microsoft.
+              AWS Certified, MERN Full Stack Developer, ICSI | CNSS
+              Certified Network Security Specialist, Certified File Transfer Professional
             </p>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Address</h5>

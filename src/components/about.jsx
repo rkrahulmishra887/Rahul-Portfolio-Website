@@ -12,6 +12,7 @@ class About extends React.Component {
           porcentage: "80%",
           value: "80",
         },
+        { id: "AI Automation & DevOps", content: "AI Automation & DevOps", porcentage: "90%", value: "90" },
         { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
         { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
         {
@@ -41,14 +42,20 @@ class About extends React.Component {
         {
           id: "Python_skill",
           content: "Python",
-          porcentage: "75%",
-          value: "75",
+          porcentage: "85%",
+          value: "85",
+        },
+        {
+          id: "Java",
+          content: "Java",
+          porcentage: "85%",
+          value: "85",
         },
         {
           id: "Linux_skill",
           content: "Linux",
-          porcentage: "65%",
-          value: "65",
+          porcentage: "75%",
+          value: "75",
         },
         {
           id: "MongoDB_skill",
@@ -69,6 +76,18 @@ class About extends React.Component {
           value: "80",
         },
         {
+          id: "Docker",
+          content: "Docker",
+          porcentage: "80%",
+          value: "80",
+        },
+        {
+          id: "Kubernetes",
+          content: "Kubernetes",
+          porcentage: "80%",
+          value: "80",
+        },
+        {
           id: "GIT_skill",
           content: "GIT",
           porcentage: "80%",
@@ -79,28 +98,38 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-            "With the zeal to reach the acme of success, I want to hold the hands that could beneﬁt the country that reared me up. Accomplished Software Developer specialized in object-oriented approach to Network and platform development.",
-        },
-        {
-          id: "first-p-about",
-          content:
-            "Software Engineer who loves to transform ideas into reality using code. I am passionate about using Javascript and Animation Libraries to create awesome user experiences.",
-        },
-        {
-          id: "first-p-about",
-          content:
-            "Accomplished Software Developer specialized in object-oriented approach to Network and platform development. Extensive background in the full life cycle of software development encompassing design, coding, testing,debuging. I seek challenging opportunities where I can fully use my skills for the success of the organization.",
+            "I am a passionate Software Engineer with expertise in both front-end and back-end development. I specialize in transforming innovative ideas into scalable, efficient, and engaging applications using JavaScript, ReactJs, HTML5, CSS3, and modern frameworks."
         },
         {
           id: "second-p-about",
           content:
-            "With less than 1 years of experience developing web applications using the latest front-end and back-end technologies.",
+            "With hands-on experience across the full software development life cycle—from design and coding to testing, debugging, and deployment—I thrive on building solutions that solve real-world problems. My approach combines object-oriented principles with cutting-edge technologies to deliver seamless and robust user experiences."
         },
         {
           id: "third-p-about",
           content:
-            "Motivated designer and developer with experience creating custom websites with ReactJs, JavaScript, HTML5, and CSS3. Strong collaboration skills and proven history of application development.",
+            "Motivated, detail-oriented, and collaborative, I enjoy working with cross-functional teams to bring complex projects to life. I believe in continuous learning and am always exploring new technologies, libraries, and best practices to stay ahead in the fast-evolving software industry."
         },
+        {
+          id: "fourth-p-about",
+          content:
+            "I have developed custom websites and applications that balance functionality, performance, and aesthetics. I pay special attention to responsive design, smooth animations, and intuitive user interfaces that enhance the overall experience for end-users."
+        },
+        {
+          id: "fifth-p-about",
+          content:
+            "Though early in my career, I have demonstrated the ability to adapt quickly, solve challenging problems, and deliver high-quality code. My focus is not just on writing code, but on crafting solutions that are maintainable, scalable, and impactful."
+        },
+        {
+          id: "sixth-p-about",
+          content:
+            "Beyond coding, I am passionate about contributing to projects that make a difference, whether through open-source contributions, innovative startup initiatives, or collaboration with forward-thinking teams. I thrive in environments where creativity meets technical excellence."
+        },
+        {
+          id: "seventh-p-about",
+          content:
+            "Ultimately, my goal is to leverage my skills and passion for technology to create software that not only meets client requirements but also elevates the user experience, drives business growth, and contributes positively to the tech community."
+        }
       ],
     };
   }

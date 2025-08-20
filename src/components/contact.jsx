@@ -141,7 +141,8 @@ class Contact extends React.Component {
                           </li>
                           <li>
                             <a
-                              href="https://www.linkedin.com/in/rahul-mishra-172972152/"
+                              // href="https://www.linkedin.com/in/rahul-mishra-172972152/"
+                              href="https://www.linkedin.com/in/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -173,6 +174,8 @@ class Contact extends React.Component {
             </div>
           </div>
         </footer>
+        {/* Eleven Labs Convai widget */}
+        <elevenlabs-convai agent-id="agent_2701k317wpk9fn4965f4mnzx3szh"></elevenlabs-convai>
       </section>
     );
   }
