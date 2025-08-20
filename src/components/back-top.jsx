@@ -30,13 +30,13 @@
 import React from "react";
 
 class BackToTop extends React.Component {
-  // Smooth scroll to top with easeInOutExpo easing
+  backToTopRef = React.createRef();
+
   scrollToTop = () => {
     const start = window.pageYOffset;
     const duration = 1500;
     let startTime = null;
 
-    // Easing function easeInOutExpo
     function easeInOutExpo(t, b, c, d) {
       if (t === 0) return b;
       if (t === d) return b + c;
@@ -56,31 +56,42 @@ class BackToTop extends React.Component {
     requestAnimationFrame(animateScroll);
   };
 
+  handleClick = (e) => {
+    e.preventDefault();
+    this.scrollToTop();
+  };
+
+  handleScroll = () => {
+    const backToTop = this.backToTopRef.current;
+    if (window.pageYOffset > 100) {
+      backToTop.classList.remove("fadeOut");
+      backToTop.style.display = "block";
+      backToTop.classList.add("fadeIn");
+    } else {
+      backToTop.classList.remove("fadeIn");
+      backToTop.classList.add("fadeOut");
+    }
+  };
+
   componentDidMount() {
-    const backToTop = document.querySelector(".back-to-top");
+    window.addEventListener("scroll", this.handleScroll);
+  }
 
-    backToTop.addEventListener("click", (e) => {
-      e.preventDefault();
-      this.scrollToTop();
-    });
-
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 100) {
-        backToTop.classList.remove("fadeOut");
-        backToTop.style.display = "block";
-        backToTop.classList.add("fadeIn");
-      } else {
-        backToTop.classList.remove("fadeIn");
-        backToTop.classList.add("fadeOut");
-      }
-    });
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   render() {
     return (
-      <a href="#" className="back-to-top animated" style={{ display: "none" }}>
-        <i className="fa fa-chevron-up"></i>
-      </a>
+      <button
+        aria-label="Back to top"
+        ref={this.backToTopRef}
+        onClick={this.handleClick}
+        className="back-to-top animated"
+        style={{ display: "none" }}
+      >
+        <i className="fa fa-chevron-up" />
+      </button>
     );
   }
 }
